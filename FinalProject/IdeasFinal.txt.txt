@@ -1,7 +1,11 @@
 
 OPCION 1:
 "Netflix's reviews"
+probablemente me inspire en esta pagina--> https://fueradeseries.com/criticas/home
+
 Hacer una pagina donde haga criticas de las series que vaya viendo de Netflix
+no solo hare reviews sino que tambien puede que suba otro tipo de contenido como noticias
+o alguna entrevista a alguien que tambien comente algun material de Netflix.
 
 
 OPCION 2:
