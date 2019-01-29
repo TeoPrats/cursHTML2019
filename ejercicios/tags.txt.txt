@@ -18,8 +18,6 @@ What are this tags for?
 - <sub>	Representa un subíndice.
 - <sup>	Representa un superíndice.
 - <legend>  Representa el título de un <fieldset>.
--<fieldset>  Representa un conjunto de controles.
-	
 
 What is an empty tag? Give an example
 es un tag sin ningun elemento, como el <br>, que ademas no necesita que se cierre
