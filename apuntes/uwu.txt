@@ -32,6 +32,21 @@ Attribute “action” in <form>: where to send the info
 ? “value”: to get the value associated with the name
 ? A “value” can be void but “name” cannot
 
+
+colspan y rowspan para juntar celdas 
+tr  hace row
+th  hace header
+td  hace celdas
+
+
+
+
+
+
+
+
+ 
+
 What is an empty tag? Give an example
 es un tag sin ningun elemento, como el <br>, que ademas no necesita que se cierre
 los elementos vacios pueden ser cerrados en el opening <br/>.
