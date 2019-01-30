@@ -1,0 +1,18 @@
+
+
+
+table, tr, td, th{
+border-collapse: collapse;	
+}
+td, th{
+text-align: center;
+border:1px solid black;
+width: 20%;
+}
+body{
+ background:linear-gradient( to bottom right,  #42f4f1, #f441ca);
+}
+
+td{
+	margin:10px
+}
