@@ -1,0 +1,6 @@
+Debido a que hay muchos navegadoes en el mercado nos interesa resetear 
+todos los efectos que puedan provocar los navegadores por defecto y para 
+esto nos es muy util el css.normalize que es una hoja de estilos que:
+-normaliza los estilos para muchos elementos html
+-corrige errores de ciertos navegadores
+-mantiene defaults algunos navegadores
