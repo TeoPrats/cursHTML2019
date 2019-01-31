@@ -1,0 +1,20 @@
+.grid-container {
+	display: grid;
+	background-color: rgb(100,0,0);
+}
+
+.grid-container div{
+	margin: 3px;
+	font-size: 25px;
+	text-align: center;
+}
+.indice {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-size: 25px;
+	text-align: center;
+}
+.indice div{
+	background-color: rgb(255,255,255);
+	padding:3px;
+}
