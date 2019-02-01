@@ -18,3 +18,36 @@
 	background-color: rgb(255,255,255);
 	padding:3px;
 }
+
+.tocha{
+		display:grid;
+		text-align:center;
+
+}
+.tocha {
+	background-color: rgb(255,255,255);
+	padding: 3px;
+}
+.datos{
+	display: grid;
+	grid-template-columns:1fr 1fr  ;
+	grid-template-rows: 1fr 1fr 1fr ;	
+}
+
+.datos1 div{
+	background-color: rgb(255,255,255);
+	padding: 3px;
+}
+.datos1{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+}
+.last{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.last div{
+	background-color: rgb(255,255,255);
+	padding: 3px;
+}
