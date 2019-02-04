@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Vamos a hacer funciones</p>
+<br>
+<p id="sq"></p>
+<br><br>
+<p id="odd"></p>
+<br><br>
+<p id="ran"></p>
+<br><br>
+<p id="maxi"></p>
+<br><br>
+<p id="calendar"></p>
+
+
+<script>
+function Square(a){
+	return a * a;
+};
+document.getElementById("sq").innerHTML = Square(8);
+
+document.getElementById("ran").innerHTML = Math.random();
+
+ function Oddoreven(a)
+{
+	if(a%2 == 0)
+	{
+		 a = "even"
+	}
+	else
+	{
+		 a = "odd"
+	}
+	return a;
+}
+document.getElementById("odd").innerHTML = Oddoreven(7);
+
+function biggest(a,b,c,d) 
+{
+	var max = -Infinity;
+	for(var i=0 ; i < arguments.length; i++)
+	{
+		if(arguments[i] > max)
+		{
+			max = arguments[i];
+		}
+	}
+	return max;
+}
+document.getElementById("maxi").innerHTML = biggest(3,4,5,6)
+
+var cars = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+console.log(cars);
+
+</script>
+</body>
+</html>
+
