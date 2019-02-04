@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+</script>
+<head>
+	<script>
+	window.onload = function () {
+	document.getElementById("first").innerHTML = "first"; 
+	var x =document.getElementsByClassName("second")
+	x[0].innerHTML = "second"; 
+	x[1].innerHTML = "second";
+	var y = document.getElementsByTagName("div")
+	y[3].innerHTML ="fourth"
+}
+		
+	</script>
+</head>
+<body>
+<div id="first"></div>
+<div class="second" ></div>
+<div class="second"></div>
+<div></div>
+</body>
+</html>
