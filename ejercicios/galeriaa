@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover{
+	filter: blur(5px)
+}
+
+
+</style>
+	<title>idk</title>
+</head>
+<body>
+<h1>LAS SIGUIENTES IMAGENES HARAN COSAS, COMO LOS CATALANES</h1>
+<div class="grid-container">
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width=300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+	<div class="grid-item"><img src="https://www.republica.com/republica-insolita/wp-content/uploads/sites/8/2014/03/huerto-25.jpg" width="300" height="300"></div>
+</div>
+</body>
+</html>
