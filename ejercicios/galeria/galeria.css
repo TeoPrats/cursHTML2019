@@ -1,53 +1,20 @@
-.grid-container {
-	display: grid;
-	background-color: rgb(100,0,0);
-}
+.item1{grid-area item1}
+.student{grid-area student}
+.item16{}
+.item18{}
+.item19{}
 
-.grid-container div{
-	margin: 3px;
-	font-size: 25px;
-	text-align: center;
-}
-.indice {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	font-size: 25px;
-	text-align: center;
-}
-.indice div{
-	background-color: rgb(255,255,255);
-	padding:3px;
-}
-
-.tocha{
-		display:grid;
-		text-align:center;
-
-}
-.tocha {
-	background-color: rgb(255,255,255);
-	padding: 3px;
-}
-.datos{
-	display: grid;
-	grid-template-columns:1fr 1fr  ;
-	grid-template-rows: 1fr 1fr 1fr ;	
-}
-
-.datos1 div{
-	background-color: rgb(255,255,255);
-	padding: 3px;
-}
-.datos1{
-	display: grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows:1fr 1fr 1fr;
-}
-.last{
+grid-container{
 	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-}
-.last div{
-	background-color: rgb(255,255,255);
-	padding: 3px;
+	grid-template:
+	'. student student . .'
+	'computer . . . .'
+	'computer . . . .'
+	'computer . . . .'
+	'. . . . .'
+	'random'
+	'. item18 item19 item 19 .'
+	'item20 item18 . item21 item21'
+	'item20 item 22 item 22 item 22 .'
+	'item23 item22 item22 item22 .';
 }
