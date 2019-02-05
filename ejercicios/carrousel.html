@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Carrousel</title>
+		<script>
+		window.onload = function(){
+	document.getElementById("red").style.opacity = 0;
+	document.getElementById("green").style.opacity = 0;
+	var red = 0;
+	var green = 0;
+	var blue = 1;
+	carrousel(red, green, blue);
+}
+
+function carrousel(red, green, blue){
+	setInterval(function(){
+		if (red == 1){
+			blue = 1;
+			red = 0;
+		}
+		else if (blue == 1){
+			green = 1;
+			blue = 0;
+		}
+		else if (green == 1){
+			green = 0;
+			red = 1;
+		}
+		document.getElementById("red").style.opacity = red;
+		document.getElementById("blue").style.opacity = blue;
+		document.getElementById("green").style.opacity = green;
+	}, 2000)
+}
+function red(){
+	document.getElementById("red").style.opacity = 1;
+	document.getElementById("blue").style.opacity = 0;
+	document.getElementById("green").style.opacity = 0;
+}
+
+function green(){
+	document.getElementById("red").style.opacity = 0;
+	document.getElementById("blue").style.opacity = 0;
+	document.getElementById("green").style.opacity = 1;
+}
+
+function blue(){
+	document.getElementById("red").style.opacity = 0;
+	document.getElementById("blue").style.opacity = 1;
+	document.getElementById("green").style.opacity = 0;
+}
+			
+		</script>
+</head>
+<body>
+	<div id="carrousel">
+		<div id="green" style = "position:absolute;">
+		<img src="green.png">
+		</div>
+		<div id="red" style = "position:absolute;">
+		<img src="red.png">
+		</div>
+		<div id="blue" style = "position:absolute;">
+		<img src="blue.png">
+		</div>
+	</div>
+	<button onclick="red()" style = "position:relative;" >show red</button>
+	<button onclick="green()" style = "position:relative;">show green</button>
+	<button onclick="blue()" style = "position:relative;">show blue</button>
+</body>
+</html>
