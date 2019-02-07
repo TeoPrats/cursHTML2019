@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+
+		var select = 1;
+	$().ready(function(){
+		$("#code").text("none");
+		$("#normal").text("none");
+		$("#shiny").text("none");
+		$("#shiny").text("none");
+		$("#name").text("none");
+		$("#type1").text("none");
+		$("#HM").text("none");
+
+		pokemones();	
+	});
+
+	$( "p" ).forEach( function() {
+$( "this" ).parent().addClass( "text" );
+});
+
+	function pokemones(){
+		$.get("http://51.144.236.83:8080/pokemons/" + select, function(data){
+			$("#name").text(data.name);
+			$("#code").text(data.num);
+			$("type1")
+			$("type2")
+			$("HM")
+		},"json");
+	}
+
+	function next (){
+		console.log("next");
+		select += 1;
+		if(select == 7){
+			select = 1;
+		}
+		pokemones();
+	}
+	function prev (){
+		console.log("next");
+		select -= 1;
+		if(select == 0){
+			select = 6;
+		}
+		pokemones();
+	}
+</script>
+
+	<title>pokeapi</title>
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, tr, td, th{
+border-collapse: collapse;	
+}
+td, th{
+text-align: center;
+border:1px solid black;
+width: 16.66%;
+}
+</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>Code</th>
+			<th>Normal Sprite</th>
+			<th>Shiny Sprite</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>HM</th>
+		</tr>
+		<tr>
+			<td><div id="code"></div></td>
+			<td><div id="normal"></div></td>
+			<td><div id="shiny"></div></td>
+			<td><div id="name"></div></td>
+			<td> <div id="type1"></div> <div id="type2"></div> </td>
+			<td><div id="HM"></div></td>
+
+		</tr>
+		<tr>
+
+	</table>
+	<br>
+	<button onclick="prev()">prev</button>
+	<button onclick="next()">next</button>
+	
+	
+
+</body>
+</html>
