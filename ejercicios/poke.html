@@ -9,7 +9,6 @@
 		$("#code").text("none");
 		$("#normal").text("none");
 		$("#shiny").text("none");
-		$("#shiny").text("none");
 		$("#name").text("none");
 		$("#type1").text("none");
 		$("#HM").text("none");
@@ -17,17 +16,15 @@
 		pokemones();	
 	});
 
-	$( "p" ).forEach( function() {
-$( "this" ).parent().addClass( "text" );
-});
-
 	function pokemones(){
 		$.get("http://51.144.236.83:8080/pokemons/" + select, function(data){
 			$("#name").text(data.name);
 			$("#code").text(data.num);
-			$("type1")
-			$("type2")
-			$("HM")
+			$("type1").text(data.types[0].type.name);
+			$("type2").text(data.types[1].type.name);
+			$("#normal").attr("src",data.images[0].front);
+			$("#shiny").attr("src",data.images[1].front_shiny);
+			$("HM").text(data.moves.HM);
 		},"json");
 	}
 
@@ -53,10 +50,8 @@ $( "this" ).parent().addClass( "text" );
 
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
 <style>
+
 table, tr, td, th{
 border-collapse: collapse;	
 }
@@ -68,20 +63,19 @@ width: 16.66%;
 </style>
 </head>
 <body>
-
 	<table>
 		<tr>
 			<th>Code</th>
 			<th>Normal Sprite</th>
 			<th>Shiny Sprite</th>
 			<th>Name</th>
-			<th>Type</th>
+			<th>Type</th>  
 			<th>HM</th>
 		</tr>
 		<tr>
 			<td><div id="code"></div></td>
-			<td><div id="normal"></div></td>
-			<td><div id="shiny"></div></td>
+			<td><img id ="normal" src="https://i.blogs.es/727caf/peligro/450_1000.jpg" style ="width:100px; height: 100px;"></td>
+			<td><img id ="shiny" src="https://i.blogs.es/727caf/peligro/450_1000.jpg" style ="width:100px; height: 100px;"></td>
 			<td><div id="name"></div></td>
 			<td> <div id="type1"></div> <div id="type2"></div> </td>
 			<td><div id="HM"></div></td>
