@@ -20,11 +20,15 @@
 		$.get("http://51.144.236.83:8080/pokemons/" + select, function(data){
 			$("#name").text(data.name);
 			$("#code").text(data.num);
-			$("type1").text(data.types[0].type.name);
-			$("type2").text(data.types[1].type.name);
+
+			$("#type").text("");
+			data.types.forEach(function(patata){
+				var currentText = $("#type").text();
+				$("#type").text(currentText + " " + patata.type.name);
+			});
 			$("#normal").attr("src",data.images[0].front);
 			$("#shiny").attr("src",data.images[1].front_shiny);
-			$("HM").text(data.moves.HM);
+			$("#HM").text(data.moves.HM);
 		},"json");
 	}
 
@@ -77,7 +81,7 @@ width: 16.66%;
 			<td><img id ="normal" src="https://i.blogs.es/727caf/peligro/450_1000.jpg" style ="width:100px; height: 100px;"></td>
 			<td><img id ="shiny" src="https://i.blogs.es/727caf/peligro/450_1000.jpg" style ="width:100px; height: 100px;"></td>
 			<td><div id="name"></div></td>
-			<td> <div id="type1"></div> <div id="type2"></div> </td>
+			<td> <div id="type"></div></td>
 			<td><div id="HM"></div></td>
 
 		</tr>
