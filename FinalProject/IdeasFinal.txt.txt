@@ -15,9 +15,7 @@ me inspirare en la pagina oficial de la LEC-->  "https://eu.lolesports.com/es"
 
 Una pagina con contenido de la LEC "European League of Legends Championship Series"
 con informacion de cada equipo asi como mi opinion personal, la clasificacion actual
-de la liga, power rankings de jugadores por cada posicion, jugador destacado de la jornada
-de cada rol, jugada destacada de la jornada, algun fail o jugada graciosa e incluso algun 
-articulo sobre cualquier tema que tenga que ver con la competicion.
+de la liga, y sobre todo comentarios de la comunidad.
 
 OPCION 3:
 algo sobre algun videojuego, i don't know but it's fine
